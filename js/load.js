@@ -1,0 +1,11 @@
+$(function(){
+    $.get("./header.html",function(data){
+        $("#header_placeholder").replaceWith(data);
+    })
+    $.get("./nav.html",function(data){
+        $("#nav_placeholder").replaceWith(data);
+    })
+    $.get("./footer.html",function(data){
+        $("#footer_placeholder").replaceWith(data);
+    })
+})
